@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotherGold Collection - Canda Gold Craft & Jewellery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Elegant Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+:root {
+    --primary-gold: #C19A6B;
+    --light-gold: #E8D0B3;
+    --cream: #FFF8F0;
+    --off-white: #FAF7F2;
+    --light-brown: #8B7355;
+    --dark-text: #2C1810;
+    --light-text: #5D4037;
+    --gold-gradient: linear-gradient(135deg, #C19A6B 0%, #E8D0B3 100%);
+    --black-bg: #121212;
+    --dark-gray: #1e1e1e;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-text);
+    background-color: var(--off-white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .hero-title, .section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 20px rgba(193, 154, 107, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-gold);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 2rem;
+}
+
+.logo span {
+    color: var(--dark-text);
+    font-size: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links a:hover {
+    color: var(--primary-gold);
+    background: rgba(193, 154, 107, 0.1);
+}
+
+.nav-links li.active a {
+    color: var(--primary-gold);
+    border-bottom: 2px solid var(--primary-gold);
+}
+
+.heart-icon {
+    position: relative;
+}
+
+.heart-icon .like-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primary-gold);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-gold);
+    cursor: pointer;
+}
+
+/* Elegant Hero Section */
+.elegant-hero {
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FFF8F0 0%, #F5E6D3 100%);
+    overflow: hidden;
+    padding: 5rem 5%;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1400px;
+    width: 100%;
+    align-items: center;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--gold-gradient);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(193, 154, 107, 0.2);
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--dark-text);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-title span {
+    color: var(--primary-gold);
+    font-style: italic;
+    font-weight: 800;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: var(--light-text);
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(193, 154, 107, 0.2);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat i {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+    display: block;
+    font-family: 'Playfair Display', serif;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-jewelry {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(193, 154, 107, 0.15);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s ease;
+    background: transparent;
+}
+
+.main-jewelry:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Floating PNG Images in Hero - FIXED WITH TRANSPARENT PNGs */
+.floating-pngs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.floating-png {
+    position: absolute;
+    filter: drop-shadow(0 5px 15px rgba(193, 154, 107, 0.6));
+    opacity: 0.9;
+    animation: float 8s ease-in-out infinite;
+    transition: all 0.3s ease;
+    background: transparent !important;
+}
+
+/* Making sure PNGs are displayed correctly */
+.floating-png img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: transparent;
+}
+
+.png-1 {
+    width: 100px;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.png-2 {
+    width: 90px;
+    top: 20%;
+    right: 8%;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-direction: reverse;
+}
+
+.png-3 {
+    width: 80px;
+    bottom: 25%;
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 14s;
+}
+
+.png-4 {
+    width: 85px;
+    bottom: 15%;
+    right: 15%;
+    animation-delay: 1.5s;
+    animation-duration: 11s;
+    animation-direction: reverse;
+}
+
+.png-5 {
+    width: 75px;
+    top: 40%;
+    left: -5px;
+    animation-delay: 0.5s;
+    animation-duration: 9s;
+}
+
+.png-6 {
+    width: 70px;
+    top: 60%;
+    right: -5px;
+    animation-delay: 2.5s;
+    animation-duration: 13s;
+    animation-direction: reverse;
+}
+
+/* Enhanced floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(-5deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(3deg);
+    }
+}
+
+/* Collections Section */
+.collections {
+    padding: 6rem 5%;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--light-text);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 2rem;
+    border: 2px solid var(--primary-gold);
+    background: transparent;
+    color: var(--primary-gold);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--gold-gradient);
+    color: white;
+    border-color: transparent;
+}
+
+/* Products Grid - UPDATED FOR BIGGER IMAGES */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(193, 154, 107, 0.15);
+}
+
+/* BIG PRODUCT IMAGE */
+.product-img {
+    height: 350px; /* Increased from 250px to 350px */
+    overflow: hidden;
+    position: relative;
+    background: var(--cream);
+    flex-shrink: 0;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    padding: 1.5rem; /* Increased padding for bigger images */
+    background: transparent !important;
+}
+
+/* Ensure product PNGs have transparent background */
+.product-img img[src*=".png"] {
+    background: transparent !important;
+    mix-blend-mode: multiply;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.08); /* Slightly bigger scale on hover */
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--gold-gradient);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+
+.like-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--light-text);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.like-btn:hover {
+    color: var(--primary-gold);
+    transform: scale(1.1);
+}
+
+.like-btn i.fas {
+    color: #ff4757;
+}
+
+.product-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.product-desc {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    font-family: 'Playfair Display', serif;
+    flex-grow: 1;
+}
+
+.product-details {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--light-brown);
+    font-family: 'Playfair Display', serif;
+}
+
+.product-details i {
+    margin-right: 5px;
+    color: var(--primary-gold);
+}
+
+/* PRICE SECTION REMOVED - No price display */
+.product-price {
+    display: none; /* Completely removed price display */
+}
+
+.product-action {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.inquire-btn, .view-details {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inquire-btn {
+    background: var(--gold-gradient);
+    color: white;
+}
+
+.view-details {
+    background: transparent;
+    border: 2px solid var(--primary-gold);
+    color: var(--primary-gold);
+}
+
+.inquire-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(193, 154, 107, 0.3);
+}
+
+.view-details:hover {
+    background: rgba(193, 154, 107, 0.1);
+}
+
+/* Info Sections */
+.info-sections {
+    padding: 6rem 5%;
+    background: var(--cream);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gold-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.info-card p {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Consultation Banner */
+.consultation-banner {
+    background: var(--gold-gradient);
+    padding: 5rem;
+    text-align: center;
+    color: white;
+    margin: 6rem 5%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.consultation-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+    opacity: 0.1;
+    background-size: 200px;
+}
+
+.consultation-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.consultation-banner p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+
+.consultation-btn {
+    padding: 1.2rem 3rem;
+    background: white;
+    color: var(--primary-gold);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.consultation-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer - Black Color */
+footer {
+    background: var(--black-bg);
+    padding: 4rem 5% 2rem;
+    margin-top: 6rem;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-gold);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary-gold);
+    color: var(--black-bg);
+    transform: translateY(-3px);
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-links a:hover {
+    color: var(--primary-gold);
+}
+
+.visit-info p, .services-info p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #25D366;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: var(--gold-gradient);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(193, 154, 107, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    .floating-png {
+        width: 60px !important;
+    }
+    
+    /* Bigger images on tablet */
+    .product-img {
+        height: 320px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consultation-banner {
+        padding: 3rem 2rem;
+        margin: 4rem 2%;
+    }
+
+    .consultation-banner h2 {
+        font-size: 2.2rem;
+    }
+
+    .floating-png {
+        width: 40px !important;
+        opacity: 0.7;
+    }
+
+    .png-1 {
+        top: 5%;
+        left: 2%;
+    }
+
+    .png-2 {
+        top: 15%;
+        right: 2%;
+    }
+
+    .png-3 {
+        bottom: 20%;
+        left: 5%;
+    }
+
+    .png-4 {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .png-5 {
+        top: 30%;
+        left: -3px;
+    }
+
+    .png-6 {
+        top: 45%;
+        right: -3px;
+    }
+    
+    /* Bigger images on mobile */
+    .product-img {
+        height: 300px;
+    }
+}
+
+/* Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional CSS for PNG transparency */
+img[src*=".png"] {
+    background-color: transparent !important;
+}
+
+.product-img {
+    background-color: var(--cream) !important;
+}
+
+    /* Luxury Color Palette */
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #F4D03F;
+            --light-gold: #FFE8A0;
+            --cream-bg: #FFFCF5;
+            --ivory-bg: #FDF8F0;
+            --warm-white: #FAF7F0;
+            --dark-text: #2C2C2C;
+            --medium-text: #5A5A5A;
+            --light-text: #7A7A7A;
+            --accent-bronze: #B08D57;
+            --shadow-light: rgba(212, 175, 55, 0.1);
+            --shadow-medium: rgba(212, 175, 55, 0.2);
+            --shadow-heavy: rgba(212, 175, 55, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream-bg);
+            color: var(--dark-text);
+        }
+
+        /* Top Bar Styling */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+            padding: 8px 0;
+            box-shadow: 0 2px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .top-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+        .logo img{
+            height: 70px;
+            width: 180px;
+        }
+
+
+        .top-bar-left span {
+            margin-right: 25px;
+            color: white;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar-left span i {
+            font-size: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px;
+            border-radius: 50%;
+        }
+
+        .top-bar-right span {
+            color: white;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar Styling - Luxury White & Gold */
+        .navbar {
+            background: var(--ivory-bg);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 80px;
+        }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .logo i {
+            font-size: 2.8rem;
+            color: var(--primary-gold);
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gemGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes gemGlow {
+            0% { text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); }
+            100% { text-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+        }
+
+        .logo-text img {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo-text img {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent-bronze);
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links > li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links > li > a {
+            color: var(--dark-text);
+            text-decoration: none;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-links > li > a:hover {
+            color: var(--primary-gold);
+            background: linear-gradient(to bottom, transparent 50%, rgba(212, 175, 55, 0.05) 50%);
+        }
+
+        .nav-links > li > a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--secondary-gold));
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links > li > a:hover::after {
+            width: 80%;
+        }
+
+        .nav-links > li > a i {
+            font-size: 14px;
+            color: var(--primary-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links > li > a:hover i {
+            transform: translateY(-2px);
+        }
+
+        /* Dropdown Styling */
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            width: 900px;
+            background: var(--ivory-bg);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-header {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            padding: 25px;
+            text-align: center;
+        }
+
+        .dropdown-header h3 {
+            color: white;
+            margin: 0 0 8px 0;
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .dropdown-header p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .dropdown-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            padding: 25px;
+        }
+
+        .dropdown-category {
+            padding: 15px;
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .dropdown-category:last-child {
+            border-right: none;
+        }
+
+        .dropdown-category h4 {
+            color: var(--primary-gold);
+            margin: 0 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .dropdown-category a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            color: var(--medium-text);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .dropdown-category a:hover {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.1));
+            color: var(--primary-gold);
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .dropdown-category a img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-category a:hover img {
+            border-color: var(--primary-gold);
+            transform: scale(1.1);
+        }
+
+        .dropdown-footer {
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(244, 208, 63, 0.05));
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            text-align: center;
+        }
+
+        .dropdown-view-all {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 30px;
+            border: 2px solid var(--primary-gold);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            background: white;
+            font-size: 14px;
+        }
+
+        .dropdown-view-all:hover {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Heart Icon */
+        .heart-icon a {
+            padding: 15px;
+          
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+            
+        }
+
+        .heart-icon a:hover {
+            transform: scale(1.1) rotate(10deg);
+      
+        }
+
+        .heart-icon i {
+            color: white;
+            font-size: 18px;
+        }
+
+        .like-count {
+            position: absolute;
+          
+            
+            background: white;
+            color: var(--primary-gold);
+            font-size: 11px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid var(--primary-gold);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-gold);
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1001;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .dropdown-content {
+                width: 750px;
+            }
+            
+            .dropdown-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-links > li > a {
+                padding: 0 18px;
+                font-size: 14px;
+            }
+            
+            .logo i {
+                font-size: 2.2rem;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -320px;
+                width: 320px;
+                height: 100vh;
+                background: var(--ivory-bg);
+                flex-direction: column;
+                padding-top: 100px;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                overflow-y: auto;
+                box-shadow: -10px 0 30px rgba(212, 175, 55, 0.15);
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links > li {
+                width: 100%;
+                height: auto;
+            }
+            
+            .nav-links > li > a {
+                padding: 20px 30px;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+                width: 100%;
+                justify-content: space-between;
+                font-size: 16px;
+            }
+            
+            .nav-links > li > a::after {
+                display: none;
+            }
+            
+            .dropdown-content {
+                position: static;
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                background: rgba(212, 175, 55, 0.05);
+                display: none;
+                margin-top: 0;
+                border-radius: 0;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+            
+            .dropdown-category {
+                border-right: none;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            
+            .dropdown-category:last-child {
+                border-bottom: none;
+            }
+            
+            .top-bar-content {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            
+            .top-bar-left span {
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+            
+            .logo-text p {
+                font-size: 0.8rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                right: -100%;
+            }
+            
+            .top-bar-left span,
+            .top-bar-right span {
+                font-size: 11px;
+            }
+            
+            .nav-container {
+                height: 70px;
+            }
+        }
+
+        /* Overlay when mobile menu is open */
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            z-index: 999;
+        }
+
+        .mobile-overlay.active {
+            display: block;
+        }
+
+        /* Dropdown arrow animation */
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Navbar Animation */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            animation: fadeInDown 0.5s ease;
+        }
+
+        /* Scroll effect for navbar */
+        .navbar.scrolled {
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+            background: rgba(255, 252, 245, 0.95);
+            backdrop-filter: blur(20px);
+        }
+
+
+
+/* BIG IMAGE ALTERNATIVE STYLE - Even bigger image option */
+.product-card.big-image {
+    grid-column: span 2;
+}
+
+.product-card.big-image .product-img {
+    height: 450px;
+}
+
+@media (max-width: 768px) {
+    .product-card.big-image {
+        grid-column: span 1;
+    }
+    
+    .product-card.big-image .product-img {
+        height: 350px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+     <header>
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-phone-alt"></i> +91 88700 13202</span>
+                    <span><i class="fas fa-envelope"></i> info@candagold.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                </div>
+                <div class="top-bar-right">
+                    <span><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 8 PM | Sun: 11 AM - 6 PM</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                   <!-- <img src="./images/Logo canda[1]_page-0001.jpg" alt=""> -->
+                    <div class="logo-text">
+                         <img src="./images/Logo canda[1]_page-0001.jpg" alt="">
+                        <!-- <h1>Canda Gold Craft & Jewellery</h1> -->
+                        <!-- <p>& Jewellery</p> -->
+                    </div>
+                </a>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="./index.html"> Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="./gold.html"> Gold <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-content gold-dropdown">
+                            
+                            <div class="dropdown-container">
+                                <div class="dropdown-category">
+                                    <h4>Necklaces & Chains</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Necklace">Gold Necklaces</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Chain">Gold Chains</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Mangalsutra">Mangalsutras</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Bangles & Bracelets</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bangles">Gold Bangles</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bracelets">Gold Bracelets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Kadas">Gold Kadas</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Rings & Earrings</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Rings">Gold Rings</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1589674781759-c21c37956a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Earrings">Gold Earrings</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1589674781759-c21c37956a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Nose Rings">Nose Rings</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Special Collections</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bridal">Bridal Sets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Antique">Antique Gold</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Diamond">Diamond Gold</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="./silver.html">Silver <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-content silver-dropdown">
+                            
+                            <div class="dropdown-container">
+                                <div class="dropdown-category">
+                                    <h4>Silver Jewelry</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Anklets">Silver Anklets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Pendants">Silver Pendants</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bracelets">Silver Bracelets</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Silverware</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Utensils">Silver Utensils</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Plates">Silver Plates</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Glasses">Silver Glasses</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Oxidized Silver</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Oxidized">Oxidized Jewelry</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Traditional">Traditional Silver</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Modern">Modern Designs</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Silver Gifts</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Gifts">Gift Items</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Pooja">Pooja Items</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Showpieces">Showpieces</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+
+                    <li><a href="./mothergold.html"> MotherGold</a></li>
+                    <li><a href="./about.html"> About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="heart-icon">
+                        <a href="#">
+                            <i class="fas fa-heart"></i> 
+                            <span class="like-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-overlay"></div>
+    </header>
+
+    <!-- Elegant Hero Section with PNG Images -->
+    <section class="elegant-hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">Since 1985</span>
+                <h1 class="hero-title">Timeless <span>Elegance</span> in Gold</h1>
+                <p class="hero-description">
+                    Discover our exclusive MotherGold collection where heritage meets modern craftsmanship. 
+                    Each piece tells a story of tradition, artistry, and timeless beauty.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-gem"></i>
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Unique Designs</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-history"></i>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Generations</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-award"></i>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Hallmark Certified</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hero-image fade-in">
+                <!-- Main PNG Image - Using transparent PNG -->
+            <img src="https://png.pngtree.com/png-clipart/20250112/original/pngtree-traditional-indian-woman-in-namaste-pose-png-image_19115028.png" 
+                     alt="Luxury Gold Jewelry" class="main-jewelry"> 
+                
+                <!-- Floating PNG Images - All using transparent PNGs -->
+                <div class="floating-pngs">
+                    <div class="floating-png png-1">
+                        <img src="https://png.pngtree.com/png-vector/20240221/ourmid/pngtree-cute-women-in-indian-traditional-dresses-png-image_11754889.png" alt="Gold Necklace">
+                    </div>
+                    <div class="floating-png png-2">
+                        <img src="https://png.pngtree.com/png-vector/20250826/ourmid/pngtree-dancing-indian-woman-illustration-png-image_17277975.webp" alt="Gold Earrings">
+                    </div>
+                    <div class="floating-png png-3">
+                        <img src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-d-indian-traditional-girl-garba-night-womans-playing-and-dandiya-celebration-png-image_11746569.png" alt="Gold Ring">
+                    </div>
+                    <div class="floating-png png-4">
+                        <img src="https://png.pngtree.com/png-clipart/20240406/original/pngtree-cute-young-woman-in-a-red-medieval-style-dress-png-image_14768289.png" alt="Gold Bracelet">
+                    </div>
+                    <div class="floating-png png-5">
+                        <img src="https://png.pngtree.com/png-vector/20240617/ourmid/pngtree-a-beautiful-indian-girl-with-long-hair-adorned-flowers-png-image_12788652.png" alt="Gold Bangles">
+                    </div>
+                    <div class="floating-png png-6">
+                        <img src="https://png.pngtree.com/png-clipart/20250121/original/pngtree-girl-holding-a-diya-lamp-symbolizing-light-hope-and-spiritual-significance-png-image_19969379.png" alt="Gold Pendant">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Signature Collections</h2>
+            <p class="section-subtitle">Discover our curated selection of timeless pieces crafted with precision and passion</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons fade-in">
+            <button class="filter-btn active" data-filter="all">All Collections</button>
+            <button class="filter-btn" data-filter="temple">Temple Jewellery</button>
+            <button class="filter-btn" data-filter="bridal">Bridal Sets</button>
+            <button class="filter-btn" data-filter="antique">Antique Collection</button>
+            <button class="filter-btn" data-filter="traditional">Traditional</button>
+        </div>
+
+        <!-- Products Grid with PNG Images -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card fade-in" data-category="temple">
+                <div class="product-img">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6f9dc7127435607.6141dbb9547b7.jpg" alt="Divine Temple Set">
+                    <div class="product-badge">Temple Collection</div>
+                    <button class="like-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-content">
+                    <h3>Divine Temple Set</h3>
+                    <p class="product-desc">Complete temple jewelry set with intricate deity motifs and traditional craftsmanship</p>
+                    <div class="product-details">
+                        <span><i class="fas fa-weight-hanging"></i> 120g Pure Gold</span>
+                        <span><i class="fas fa-gem"></i> Ruby & Emerald</span>
+                    </div>
+                    <!-- PRICE SECTION REMOVED -->
+                    <div class="product-action">
+                        <button class="inquire-btn">Inquire Now</button>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card fade-in" data-category="bridal">
+                <div class="product-img">
+                    <img src="https://thumbs.dreamstime.com/b/close-up-indian-bride-wearing-gold-necklace-heavy-jewellery-traditional-wedding-day-background-153977130.jpg" alt="Royal Bridal Set">
+                    <div class="product-badge">Bridal Collection</div>
+                    <button class="like-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-content">
+                    <h3>Royal Bridal Set</h3>
+                    <p class="product-desc">Complete 7-piece bridal set with necklace, earrings, bangles, and maang tikka</p>
+                    <div class="product-details">
+                        <span><i class="fas fa-weight-hanging"></i> 250g Pure Gold</span>
+                        <span><i class="fas fa-layer-group"></i> 7 Pieces Set</span>
+                    </div>
+                    <!-- PRICE SECTION REMOVED -->
+                    <div class="product-action">
+                        <button class="inquire-btn">Inquire Now</button>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card fade-in" data-category="temple">
+                <div class="product-img">
+                    <img src="https://thumbs.dreamstime.com/b/indian-bride-wearing-jewellery-gold-necklace-earring-close-up-indian-bride-wearing-heavy-jewellery-traditional-gold-153978178.jpg" alt="Goddess Lakshmi Necklace">
+                    <div class="product-badge">Heritage Piece</div>
+                    <button class="like-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-content">
+                    <h3>Goddess Lakshmi Necklace</h3>
+                    <p class="product-desc">Intricate Lakshmi motif temple necklace with diamond and pearl accents</p>
+                    <div class="product-details">
+                        <span><i class="fas fa-weight-hanging"></i> 85g Pure Gold</span>
+                        <span><i class="fas fa-gem"></i> Diamond & Pearl</span>
+                    </div>
+                    <!-- PRICE SECTION REMOVED -->
+                    <div class="product-action">
+                        <button class="inquire-btn">Inquire Now</button>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card fade-in" data-category="traditional">
+                <div class="product-img">
+                    <img src="https://www.tarinika.com/cdn/shop/files/Rawday12618_2048x.jpg?v=1684488397" alt="Traditional Temple Haram">
+                    <div class="product-badge">Traditional</div>
+                    <button class="like-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-content">
+                    <h3>Traditional Temple Haram</h3>
+                    <p class="product-desc">Long temple necklace with intricate chain work and polki stone settings</p>
+                    <div class="product-details">
+                        <span><i class="fas fa-weight-hanging"></i> 95g Pure Gold</span>
+                        <span><i class="fas fa-gem"></i> Polki Stones</span>
+                    </div>
+                    <!-- PRICE SECTION REMOVED -->
+                    <div class="product-action">
+                        <button class="inquire-btn">Inquire Now</button>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card fade-in" data-category="antique">
+                <div class="product-img">
+                    <img src="https://media.gettyimages.com/id/1705543842/photo/beautiful-traditional-indian-bridal-in-lehenga-and-jewelry.jpg?s=612x612&w=gi&k=20&c=F4K7b9vqdufvW1Ff1-4dh8hVLD-N-Scf465phlncR_w=" alt="Antique Bridal Set">
+                    <div class="product-badge">Antique Finish</div>
+                    <button class="like-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-content">
+                    <h3>Antique Bridal Set</h3>
+                    <p class="product-desc">Vintage style complete bridal jewelry with antique finish and intricate work</p>
+                    <div class="product-details">
+                        <span><i class="fas fa-weight-hanging"></i> 180g Pure Gold</span>
+                        <span><i class="fas fa-layer-group"></i> 5 Pieces Set</span>
+                    </div>
+                    <!-- PRICE SECTION REMOVED -->
+                    <div class="product-action">
+                        <button class="inquire-btn">Inquire Now</button>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card fade-in" data-category="bridal">
+                <div class="product-img">
+                    <img src="https://images.news18.com/ibnlive/uploads/2025/10/1761899338_image-2025-10-af0d2b0cfe059319701bb36465615bcd.jpg" alt="Modern Bridal Set">
+                    <div class="product-badge">Contemporary</div>
+                    <button class="like-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-content">
+                    <h3>Modern Bridal Set</h3>
+                    <p class="product-desc">Contemporary bridal set with traditional elements and modern design</p>
+                    <div class="product-details">
+                        <span><i class="fas fa-weight-hanging"></i> 150g Pure Gold</span>
+                        <span><i class="fas fa-gem"></i> Diamond & Emerald</span>
+                    </div>
+                    <!-- PRICE SECTION REMOVED -->
+                    <div class="product-action">
+                        <button class="inquire-btn">Inquire Now</button>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Sections -->
+    <section class="info-sections">
+        <div class="info-grid">
+            <div class="info-card fade-in">
+                <div class="info-icon">
+                    <i class="fas fa-hands"></i>
+                </div>
+                <h3>Handcrafted Excellence</h3>
+                <p>Each piece is meticulously crafted by master artisans using traditional techniques passed down through generations.</p>
+            </div>
+
+            <div class="info-card fade-in">
+                <div class="info-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>100% Hallmark Certified</h3>
+                <p>All our gold jewelry is BIS hallmark certified, ensuring purity and quality standards are met.</p>
+            </div>
+
+            <div class="info-card fade-in">
+                <div class="info-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h3>Family Heritage</h3>
+                <p>3 generations of jewelry making expertise, preserving traditional craftsmanship since 1985.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Banner -->
+    <section class="consultation-banner fade-in">
+        <h2>Book Your Heritage Consultation</h2>
+        <p>Schedule a personalized consultation with our jewelry experts to create your perfect piece or restore family heirlooms.</p>
+        <button class="consultation-btn">Book Free Consultation</button>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <i class="fas fa-gem"></i>
+                        <div>
+                            <h3>Canda Gold Craft & Jewellery</h3>
+                            <p class="footer-tagline">Crafting timeless jewelry since 1985</p>
+                        </div>
+                    </a>
+                </div>
+                <p class="footer-description">Family-owned jewelry store specializing in premium gold and silver jewelry, offering exquisite craftsmanship and personalized service for over three decades.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="gold.html"><i class="fas fa-chevron-right"></i> Gold Collection</a></li>
+                    <li><a href="silver.html"><i class="fas fa-chevron-right"></i> Silver Collection</a></li>
+                    <li><a href="mothergold.html"><i class="fas fa-chevron-right"></i> MotherGold</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Visit Us</h4>
+                <div class="visit-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewel Street, Mumbai, India</p>
+                    <p><i class="fas fa-phone"></i> +91 88700 13202</p>
+                    <p><i class="fas fa-envelope"></i> info@candagold.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 8 PM</p>
+                    <p><i class="fas fa-clock"></i> Sunday: 11 AM - 6 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="services-info">
+                    <p><i class="fas fa-gem"></i> Jewelry Consultation</p>
+                    <p><i class="fas fa-pencil-alt"></i> Custom Design</p>
+                    <p><i class="fas fa-sync-alt"></i> Repair & Maintenance</p>
+                    <p><i class="fas fa-shield-alt"></i> Insurance Assistance</p>
+                    <p><i class="fas fa-truck"></i> Safe Delivery</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 Canda Gold Craft & Jewellery. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+            <p class="disclaimer">All jewelry shown is available exclusively at our store. Hallmark certified. No online delivery available.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918870013202" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with Expert</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar') && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Like Button Functionality
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const heartIcon = this.querySelector('i');
+                const likeCount = document.querySelector('.like-count');
+                
+                if (heartIcon.classList.contains('far')) {
+                    heartIcon.classList.remove('far');
+                    heartIcon.classList.add('fas');
+                    let currentCount = parseInt(likeCount.textContent);
+                    likeCount.textContent = currentCount + 1;
+                    
+                    // Animation
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 200);
+                } else {
+                    heartIcon.classList.remove('fas');
+                    heartIcon.classList.add('far');
+                    let currentCount = parseInt(likeCount.textContent);
+                    likeCount.textContent = currentCount - 1;
+                }
+            });
+        });
+
+        // Filter Products
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                productCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // View Details Button
+        document.querySelectorAll('.view-details').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('h3').textContent;
+                const productDesc = productCard.querySelector('.product-desc').textContent;
+                
+                alert(`${productName}\n\n${productDesc}\n\nFor more details and customization options, please contact us via WhatsApp or visit our store.`);
+            });
+        });
+
+        // Inquire Button (WhatsApp)
+        document.querySelectorAll('.inquire-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('h3').textContent;
+                
+                const message = `Hello, I'm interested in the ${productName} from your MotherGold Collection. Can you please provide more details?`;
+                const whatsappURL = `https://wa.me/918870013202?text=${encodeURIComponent(message)}`;
+                
+                window.open(whatsappURL, '_blank');
+            });
+        });
+
+        // Consultation Button
+        document.querySelector('.consultation-btn').addEventListener('click', () => {
+            const message = `Hello, I would like to book a heritage consultation for the MotherGold Collection. Please provide available time slots.`;
+            const whatsappURL = `https://wa.me/918870013202?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll Animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const checkScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+
+        // Interactive PNG Effects
+        const pngs = document.querySelectorAll('.floating-png');
+        
+        pngs.forEach(png => {
+            png.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 768) {
+                    this.style.transform = 'scale(1.2)';
+                    this.style.filter = 'drop-shadow(0 10px 20px rgba(193, 154, 107, 0.8))';
+                    this.style.transition = 'all 0.3s ease';
+                }
+            });
+            
+            png.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.filter = 'drop-shadow(0 5px 15px rgba(193, 154, 107, 0.6))';
+            });
+        });
+
+        // Parallax Effect for Hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.elegant-hero');
+            
+            if (hero) {
+                const rate = scrolled * -0.3;
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Canda Gold Craft & Jewellery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-gold: #C19A6B;
+            --light-gold: #E8D0B3;
+            --cream: #FFF8F0;
+            --off-white: #FAF7F2;
+            --light-brown: #8B7355;
+            --dark-text: #2C1810;
+            --light-text: #5D4037;
+            --gold-gradient: linear-gradient(135deg, #C19A6B 0%, #E8D0B3 100%);
+            --black-bg: #121212;
+            --dark-gray: #1e1e1e;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-text);
+            background-color: var(--off-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Navigation */
+        .top-bar {
+            background: var(--dark-text);
+            color: var(--light-gold);
+            padding: 0.5rem 5%;
+            font-size: 0.9rem;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .top-bar-left, .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .top-bar i {
+            margin-right: 8px;
+            color: var(--primary-gold);
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            box-shadow: 0 2px 20px rgba(193, 154, 107, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--dark-text);
+            gap: 15px;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: var(--dark-text);
+        }
+
+        .logo-text p {
+            font-size: 0.9rem;
+            color: var(--primary-gold);
+            margin-top: -5px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-gold);
+            background: rgba(193, 154, 107, 0.1);
+        }
+
+        .nav-links li.active a {
+            color: var(--primary-gold);
+            border-bottom: 2px solid var(--primary-gold);
+        }
+
+        .heart-icon {
+            position: relative;
+        }
+
+        .heart-icon .like-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--primary-gold);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            cursor: pointer;
+        }
+
+        /* About Hero Section */
+        .about-hero {
+            min-height: 80vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://static.wixstatic.com/media/b69f5d_e2fcba4914e346b18dc935e9135425b6~mv2.jpg/v1/fill/w_840,h_420,al_c,lg_1,q_80/b69f5d_e2fcba4914e346b18dc935e9135425b6~mv2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-gold);
+        }
+
+        .hero-content h1 i {
+            margin-right: 15px;
+        }
+
+        .tagline {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .description {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-align: left;
+        }
+
+        .hero-stat i {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+        }
+
+        .hero-stat h3 {
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .hero-stat p {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: var(--light-text);
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .story-intro {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: var(--light-text);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .story-timeline {
+            margin-top: 3rem;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 100px;
+            top: 0;
+            bottom: -2.5rem;
+            width: 2px;
+            background: var(--primary-gold);
+            opacity: 0.3;
+        }
+
+        .timeline-item:last-child:before {
+            display: none;
+        }
+
+        .timeline-year {
+            min-width: 100px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            font-family: 'Cinzel', serif;
+        }
+
+        .timeline-content {
+            padding-left: 2rem;
+        }
+
+        .timeline-content h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-text);
+        }
+
+        .timeline-content p {
+            color: var(--light-text);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .story-image {
+            position: relative;
+        }
+
+        .story-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .founder-quote {
+            position: absolute;
+            bottom: -30px;
+            left: 30px;
+            right: 30px;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .founder-quote i {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            margin-bottom: 1rem;
+        }
+
+        .founder-quote p {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .founder-quote cite {
+            font-weight: 600;
+            color: var(--primary-gold);
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 6rem 5%;
+            background: var(--cream);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-gold);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(193, 154, 107, 0.1);
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--dark-text);
+        }
+
+        .value-card p {
+            color: var(--light-text);
+            font-size: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Craftsmanship Section */
+        .craftsmanship-section {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .craftsmanship-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .craftsmanship-image {
+            position: relative;
+        }
+
+        .craftsmanship-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .craftsmanship-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--gold-gradient);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        .craftsmanship-text h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-text);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .craftsmanship-intro {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 3rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--gold-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            font-family: 'Cinzel', serif;
+        }
+
+        .step-content h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-text);
+        }
+
+        .step-content p {
+            color: var(--light-text);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 6rem 5%;
+            background: var(--cream);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(193, 154, 107, 0.15);
+        }
+
+        .member-image {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .team-member:hover .member-image img {
+            transform: scale(1.05);
+        }
+
+        .member-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--gold-gradient);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            font-family: 'Cinzel', serif;
+        }
+
+        .member-info {
+            padding: 2rem;
+        }
+
+        .member-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-text);
+        }
+
+        .member-title {
+            color: var(--primary-gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .member-desc {
+            color: var(--light-text);
+            font-size: 0.95rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Store Experience Section */
+        .store-experience {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .experience-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .experience-text h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-text);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .experience-intro {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 3rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .experience-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .feature i {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            margin-top: 5px;
+        }
+
+        .feature h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-text);
+        }
+
+        .feature p {
+            color: var(--light-text);
+            font-size: 0.95rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .experience-cta {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .cta-btn-primary, .cta-btn-secondary {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cta-btn-primary {
+            background: var(--gold-gradient);
+            color: white;
+            border: none;
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: var(--primary-gold);
+            border: 2px solid var(--primary-gold);
+        }
+
+        .cta-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(193, 154, 107, 0.3);
+        }
+
+        .cta-btn-secondary:hover {
+            background: rgba(193, 154, 107, 0.1);
+        }
+
+        .experience-image {
+            position: relative;
+        }
+
+        .experience-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: var(--gold-gradient);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        /* Contact Info Section */
+        .contact-info-section {
+            padding: 6rem 5%;
+            background: var(--cream);
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+
+        .contact-info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(193, 154, 107, 0.1);
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(193, 154, 107, 0.15);
+        }
+
+        .contact-info-card i {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-text);
+        }
+
+        .contact-info-card p {
+            color: var(--light-text);
+            font-family: 'Playfair Display', serif;
+            line-height: 1.6;
+        }
+
+        .contact-social {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(193, 154, 107, 0.2);
+        }
+
+        .contact-social h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-text);
+        }
+
+        .contact-social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .contact-social-icons a {
+            width: 50px;
+            height: 50px;
+            background: var(--gold-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .contact-social-icons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(193, 154, 107, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black-bg);
+            padding: 4rem 5% 2rem;
+            color: white;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo i {
+            font-size: 2rem;
+            color: var(--primary-gold);
+        }
+
+        .footer-logo h3 {
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-tagline {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-gold);
+            color: var(--black-bg);
+            transform: translateY(-3px);
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-gold);
+        }
+
+        .visit-info p, .services-info p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto 1rem;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--primary-gold);
+        }
+
+        .disclaimer {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 5rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gold-gradient);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(193, 154, 107, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .story-content,
+            .craftsmanship-content,
+            .experience-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .tagline {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.8rem;
+            }
+
+            .description {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+            }
+
+            .hero-stat {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-header h2 {
+                font-size: 2.2rem;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .timeline-item:before {
+                left: 60px;
+            }
+
+            .timeline-year {
+                min-width: 60px;
+                font-size: 1.2rem;
+            }
+
+            .founder-quote {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 2rem;
+            }
+
+            .experience-cta {
+                flex-direction: column;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+            /* Luxury Color Palette */
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #F4D03F;
+            --light-gold: #FFE8A0;
+            --cream-bg: #FFFCF5;
+            --ivory-bg: #FDF8F0;
+            --warm-white: #FAF7F0;
+            --dark-text: #2C2C2C;
+            --medium-text: #5A5A5A;
+            --light-text: #7A7A7A;
+            --accent-bronze: #B08D57;
+            --shadow-light: rgba(212, 175, 55, 0.1);
+            --shadow-medium: rgba(212, 175, 55, 0.2);
+            --shadow-heavy: rgba(212, 175, 55, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream-bg);
+            color: var(--dark-text);
+        }
+
+        /* Top Bar Styling */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+            padding: 8px 0;
+            box-shadow: 0 2px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .top-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+        .logo img{
+            height: 70px;
+            width: 180px;
+        }
+
+
+        .top-bar-left span {
+            margin-right: 25px;
+            color: white;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar-left span i {
+            font-size: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px;
+            border-radius: 50%;
+        }
+
+        .top-bar-right span {
+            color: white;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar Styling - Luxury White & Gold */
+        .navbar {
+            background: var(--ivory-bg);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 80px;
+        }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .logo i {
+            font-size: 2.8rem;
+            color: var(--primary-gold);
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gemGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes gemGlow {
+            0% { text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); }
+            100% { text-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+        }
+
+        .logo-text img {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo-text img {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent-bronze);
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links > li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links > li > a {
+            color: var(--dark-text);
+            text-decoration: none;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-links > li > a:hover {
+            color: var(--primary-gold);
+            background: linear-gradient(to bottom, transparent 50%, rgba(212, 175, 55, 0.05) 50%);
+        }
+
+        .nav-links > li > a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--secondary-gold));
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links > li > a:hover::after {
+            width: 80%;
+        }
+
+        .nav-links > li > a i {
+            font-size: 14px;
+            color: var(--primary-gold);
+            transition: transform 0.3s ease; 
+        }
+
+        .nav-links > li > a:hover i {
+            transform: translateY(-2px);
+        }
+
+        /* Dropdown Styling */
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            width: 900px;
+            background: var(--ivory-bg);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-header {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            padding: 25px;
+            text-align: center;
+        }
+
+        .dropdown-header h3 {
+            color: white;
+            margin: 0 0 8px 0;
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .dropdown-header p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .dropdown-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            padding: 25px;
+        }
+
+        .dropdown-category {
+            padding: 15px;
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .dropdown-category:last-child {
+            border-right: none;
+        }
+
+        .dropdown-category h4 {
+            color: var(--primary-gold);
+            margin: 0 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .dropdown-category a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            color: var(--medium-text);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .dropdown-category a:hover {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.1));
+            color: var(--primary-gold);
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .dropdown-category a img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-category a:hover img {
+            border-color: var(--primary-gold);
+            transform: scale(1.1);
+        }
+
+        .dropdown-footer {
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(244, 208, 63, 0.05));
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            text-align: center;
+        }
+
+        .dropdown-view-all {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 30px;
+            border: 2px solid var(--primary-gold);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            background: white;
+            font-size: 14px;
+        }
+
+        .dropdown-view-all:hover {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Heart Icon */
+        .heart-icon a {
+            padding: 15px;
+          
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+            
+        }
+
+        .heart-icon a:hover {
+            transform: scale(1.1) rotate(10deg);
+      
+        }
+
+        .heart-icon i {
+            color: white;
+            font-size: 18px;
+        }
+
+        .like-count {
+            position: absolute;
+          
+            
+            background: white;
+            color: var(--primary-gold);
+            font-size: 11px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid var(--primary-gold);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-gold);
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1001;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .dropdown-content {
+                width: 750px;
+            }
+            
+            .dropdown-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-links > li > a {
+                padding: 0 18px;
+                font-size: 14px;
+            }
+            
+            .logo i {
+                font-size: 2.2rem;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -320px;
+                width: 320px;
+                height: 100vh;
+                background: var(--ivory-bg);
+                flex-direction: column;
+                padding-top: 100px;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                overflow-y: auto;
+                box-shadow: -10px 0 30px rgba(212, 175, 55, 0.15);
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links > li {
+                width: 100%;
+                height: auto;
+            }
+            
+            .nav-links > li > a {
+                padding: 20px 30px;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+                width: 100%;
+                justify-content: space-between;
+                font-size: 16px;
+            }
+            
+            .nav-links > li > a::after {
+                display: none;
+            }
+            
+            .dropdown-content {
+                position: static;
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                background: rgba(212, 175, 55, 0.05);
+                display: none;
+                margin-top: 0;
+                border-radius: 0;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+            
+            .dropdown-category {
+                border-right: none;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            
+            .dropdown-category:last-child {
+                border-bottom: none;
+            }
+            
+            .top-bar-content {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            
+            .top-bar-left span {
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+            
+            .logo-text p {
+                font-size: 0.8rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                right: -100%;
+            }
+            
+            .top-bar-left span,
+            .top-bar-right span {
+                font-size: 11px;
+            }
+            
+            .nav-container {
+                height: 70px;
+            }
+        }
+
+        /* Overlay when mobile menu is open */
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            z-index: 999;
+        }
+
+        .mobile-overlay.active {
+            display: block;
+        }
+
+        /* Dropdown arrow animation */
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Navbar Animation */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            animation: fadeInDown 0.5s ease;
+        }
+
+        /* Scroll effect for navbar */
+        .navbar.scrolled {
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+            background: rgba(255, 252, 245, 0.95);
+            backdrop-filter: blur(20px);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+      <header>
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-phone-alt"></i> +91 88700 13202</span>
+                    <span><i class="fas fa-envelope"></i> info@candagold.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                </div>
+                <div class="top-bar-right">
+                    <span><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 8 PM | Sun: 11 AM - 6 PM</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                   <!-- <img src="./images/Logo canda[1]_page-0001.jpg" alt=""> -->
+                    <div class="logo-text">
+                         <img src="./images/Logo canda[1]_page-0001.jpg" alt="">
+                        <!-- <h1>Canda Gold Craft & Jewellery</h1> -->
+                        <!-- <p>& Jewellery</p> -->
+                    </div>
+                </a>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="./index.html"> Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="./gold.html"> Gold <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-content gold-dropdown">
+                           
+                            <div class="dropdown-container">
+                                <div class="dropdown-category">
+                                    <h4>Necklaces & Chains</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Necklace">Gold Necklaces</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Chain">Gold Chains</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Mangalsutra">Mangalsutras</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Bangles & Bracelets</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bangles">Gold Bangles</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bracelets">Gold Bracelets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Kadas">Gold Kadas</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Rings & Earrings</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Rings">Gold Rings</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1589674781759-c21c37956a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Earrings">Gold Earrings</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1589674781759-c21c37956a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Nose Rings">Nose Rings</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Special Collections</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bridal">Bridal Sets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Antique">Antique Gold</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Diamond">Diamond Gold</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="./silver.html"> Silver <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-content silver-dropdown">
+                           
+                            <div class="dropdown-container">
+                                <div class="dropdown-category">
+                                    <h4>Silver Jewelry</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Anklets">Silver Anklets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Pendants">Silver Pendants</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bracelets">Silver Bracelets</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Silverware</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Utensils">Silver Utensils</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Plates">Silver Plates</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Glasses">Silver Glasses</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Oxidized Silver</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Oxidized">Oxidized Jewelry</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Traditional">Traditional Silver</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Modern">Modern Designs</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Silver Gifts</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Gifts">Gift Items</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Pooja">Pooja Items</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Showpieces">Showpieces</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+
+                    <li><a href="./mothergold.html"> MotherGold</a></li>
+                    <li><a href="./about.html"> About</a></li>
+                    <li><a href="./contact.html"> Contact</a></li>
+                    <li class="heart-icon">
+                        <a href="#">
+                            <i class="fas fa-heart"></i> 
+                            <span class="like-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-overlay"></div>
+    </header>
+    <!-- About Hero Section -->
+    <section class="about-hero fade-in">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><i class="fas fa-history"></i> Our Legacy</h1>
+                <h2 class="tagline">Crafting Timeless Jewelry Since 1985</h2>
+                <p class="description">Three generations of passion, precision, and perfection in every piece we create</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <i class="fas fa-history"></i>
+                        <div>
+                            <h3>35+ Years</h3>
+                            <p>Of Excellence</p>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-gem"></i>
+                        <div>
+                            <h3>10,000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h3>Master</h3>
+                            <p>Artisans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2><i class="fas fa-book-open"></i> Our Story</h2>
+                <p class="section-subtitle">From Humble Beginnings to Jewelry Excellence</p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-text fade-in">
+                    <p class="story-intro">In 1985, Mr. Chandrashekhar Canda started a small jewelry workshop in Mumbai with nothing but a dream and exceptional craftsmanship skills. What began as a modest family business has now blossomed into one of Mumbai's most trusted names in gold and silver jewelry.</p>
+                    
+                    <div class="story-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1985</div>
+                            <div class="timeline-content">
+                                <h4>The Beginning</h4>
+                                <p>Mr. Chandrashekhar Canda established a small workshop in Mumbai, focusing on traditional gold jewelry craftsmanship.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">1995</div>
+                            <div class="timeline-content">
+                                <h4>First Showroom</h4>
+                                <p>Opened our first retail showroom in Mumbai, introducing the "Canda Gold Craft & Jewellery" brand to customers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2005</div>
+                            <div class="timeline-content">
+                                <h4>Expansion</h4>
+                                <p>Expanded our collection to include sterling silver jewelry and introduced the "MotherGold" heritage collection.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2015</div>
+                            <div class="timeline-content">
+                                <h4>New Generation</h4>
+                                <p>Third generation joined the business, bringing modern designs while preserving traditional craftsmanship.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-content">
+                                <h4>Present Day</h4>
+                                <p>Now serving thousands of happy customers with three generations of expertise and trust.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Story">
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Jewelry is not just an ornament; it's a story, a memory, and a legacy that lasts for generations."</p>
+                        <cite>- Mr. Chandrashekhar Canda, Founder</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="craftsmanship-section">
+        <div class="container">
+            <div class="craftsmanship-content">
+                <div class="craftsmanship-image fade-in">
+                    <img src="https://weddingsutra.com/images/wedding-images/bride/kannada-bride-Jewellery/kannada-bride-pic18.jpg" alt="Craftsmanship">
+                    <div class="craftsmanship-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Master Artisans</span>
+                    </div>
+                </div>
+                
+                <div class="craftsmanship-text fade-in">
+                    <h2><i class="fas fa-hammer"></i> Our Craftsmanship</h2>
+                    <p class="craftsmanship-intro">Each piece of jewelry at Canda Gold Craft undergoes a meticulous process that combines traditional techniques with modern precision.</p>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Design & Conceptualization</h4>
+                                <p>Every design begins with sketches and consultations, ensuring it meets both aesthetic and functional requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>Material Selection</h4>
+                                <p>Only BIS hallmarked 22K/24K gold and 925 sterling silver are used, along with certified precious stones.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Handcrafting</h4>
+                                <p>Master artisans handcraft each piece using traditional techniques like filigree, meenakari, and kundan work.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Quality Check</h4>
+                                <p>Every piece undergoes rigorous quality checks for weight, purity, finishing, and durability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2><i class="fas fa-star"></i> Our Values</h2>
+                <p class="section-subtitle">The Principles That Guide Our Craft</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Traditional Craftsmanship</h3>
+                    <p>Preserving age-old jewelry making techniques passed down through generations</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Every piece is hallmarked and certified for purity and authenticity</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Customer Trust</h3>
+                    <p>Building relationships that last a lifetime with transparency and integrity</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Blending traditional designs with contemporary aesthetics</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Fair Practices</h3>
+                    <p>Ethical sourcing, fair pricing, and honest business practices</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-family"></i>
+                    </div>
+                    <h3>Family Legacy</h3>
+                    <p>Three generations of expertise in every piece we create</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2><i class="fas fa-users"></i> Meet Our Family</h2>
+                <p class="section-subtitle">Three Generations of Jewelry Excellence</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Founder">
+                        <div class="member-badge">Founder</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Chandrashekhar Canda</h3>
+                        <p class="member-title">Founder & Master Craftsman</p>
+                        <p class="member-desc">With over 40 years of experience, he established the business with a vision to create timeless jewelry that becomes family heirlooms.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Director">
+                        <div class="member-badge">Second Generation</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mrs. Anjali Canda</h3>
+                        <p class="member-title">Managing Director</p>
+                        <p class="member-desc">She expanded the business and introduced innovative designs while maintaining traditional craftsmanship standards.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Design Head">
+                        <div class="member-badge">Third Generation</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Rahul Canda</h3>
+                        <p class="member-title">Design & Marketing Head</p>
+                        <p class="member-desc">Combining modern aesthetics with traditional techniques, he brings contemporary designs to the heritage collection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Experience Section -->
+    <section class="store-experience">
+        <div class="container">
+            <div class="experience-content">
+                <div class="experience-text fade-in">
+                    <h2><i class="fas fa-store"></i> The Canda Experience</h2>
+                    <p class="experience-intro">Visiting our store is more than just shopping; it's an experience in luxury and personalized service.</p>
+                    
+                    <div class="experience-features">
+                        <div class="feature">
+                            <i class="fas fa-gem"></i>
+                            <div>
+                                <h4>Luxury Ambiance</h4>
+                                <p>Step into our elegantly designed store that reflects the quality of our jewelry</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-user-tie"></i>
+                            <div>
+                                <h4>Expert Consultation</h4>
+                                <p>Personalized guidance from our jewelry experts for your perfect piece</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <div>
+                                <h4>VIP Service</h4>
+                                <p>Complimentary refreshments and comfortable lounge for customers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>After-Sales Service</h4>
+                                <p>Lifetime polish, cleaning, and maintenance services for all purchases</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-cta">
+                        <a href="#contact" class="cta-btn-primary">Contact Us</a>
+                        <a href="index.html#visit-store" class="cta-btn-secondary">Visit Our Store</a>
+                    </div>
+                </div>
+                
+                <div class="experience-image fade-in">
+                    <img src="https://images.news18.com/ibnlive/uploads/2025/10/1761899338_image-2025-10-af0d2b0cfe059319701bb36465615bcd.jpg" alt="Store Experience">
+                    <div class="experience-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Premium Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact" class="contact-info-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                <p class="section-subtitle">Visit our store or contact us for personalized jewelry consultation</p>
+            </div>
+            
+            <div class="contact-info-grid">
+                <div class="contact-info-card fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Our Store</h4>
+                    <p>123 Jewel Street, Bandra West<br>Mumbai, Maharashtra 400050</p>
+                </div>
+                
+                <div class="contact-info-card fade-in">
+                    <i class="fas fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <p>+91 88700 13202<br>+91 88700 13203</p>
+                </div>
+                
+                <div class="contact-info-card fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>info@candagold.com<br>support@candagold.com</p>
+                </div>
+                
+                <div class="contact-info-card fade-in">
+                    <i class="fas fa-clock"></i>
+                    <h4>Store Hours</h4>
+                    <p>Monday - Saturday: 10 AM - 8 PM<br>Sunday: 11 AM - 6 PM</p>
+                </div>
+            </div>
+            
+            <div class="contact-social fade-in">
+                <h4>Connect With Us</h4>
+                <div class="contact-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <i class="fas fa-gem"></i>
+                        <div>
+                            <h3>Canda Gold Craft & Jewellery</h3>
+                            <p class="footer-tagline">Crafting timeless jewelry since 1985</p>
+                        </div>
+                    </a>
+                </div>
+                <p class="footer-description">Family-owned jewelry store specializing in premium gold and silver jewelry, offering exquisite craftsmanship and personalized service for over three decades.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="gold.html"><i class="fas fa-chevron-right"></i> Gold Collection</a></li>
+                    <li><a href="silver.html"><i class="fas fa-chevron-right"></i> Silver Collection</a></li>
+                    <li><a href="mothergold.html"><i class="fas fa-chevron-right"></i> MotherGold</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Visit Us</h4>
+                <div class="visit-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewel Street, Mumbai, India</p>
+                    <p><i class="fas fa-phone"></i> +91 88700 13202</p>
+                    <p><i class="fas fa-envelope"></i> info@candagold.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 8 PM</p>
+                    <p><i class="fas fa-clock"></i> Sunday: 11 AM - 6 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="services-info">
+                    <p><i class="fas fa-gem"></i> Jewelry Consultation</p>
+                    <p><i class="fas fa-pencil-alt"></i> Custom Design</p>
+                    <p><i class="fas fa-sync-alt"></i> Repair & Maintenance</p>
+                    <p><i class="fas fa-shield-alt"></i> Insurance Assistance</p>
+                    <p><i class="fas fa-truck"></i> Safe Delivery</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 Canda Gold Craft & Jewellery. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+            <p class="disclaimer">All jewelry shown is available exclusively at our store. Hallmark certified. No online delivery available.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918870013202" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar') && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Like Button Functionality
+        const likeBtn = document.querySelector('.heart-icon a');
+        const likeCount = document.querySelector('.like-count');
+        
+        likeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            let currentCount = parseInt(likeCount.textContent);
+            likeCount.textContent = currentCount + 1;
+            
+            // Animation
+            const heartIcon = this.querySelector('i');
+            heartIcon.style.transform = 'scale(1.3)';
+            setTimeout(() => {
+                heartIcon.style.transform = 'scale(1)';
+            }, 200);
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll Animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const checkScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add active class to nav links on scroll
+        const sections = document.querySelectorAll('section[id]');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.parentElement.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

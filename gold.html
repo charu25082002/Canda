@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Collection - Canda Gold Craft & Jewellery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/gold.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+        <style>
+        /* Luxury Color Palette */
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #F4D03F;
+            --light-gold: #FFE8A0;
+            --cream-bg: #FFFCF5;
+            --ivory-bg: #FDF8F0;
+            --warm-white: #FAF7F0;
+            --dark-text: #2C2C2C;
+            --medium-text: #5A5A5A;
+            --light-text: #7A7A7A;
+            --accent-bronze: #B08D57;
+            --shadow-light: rgba(212, 175, 55, 0.1);
+            --shadow-medium: rgba(212, 175, 55, 0.2);
+            --shadow-heavy: rgba(212, 175, 55, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream-bg);
+            color: var(--dark-text);
+        }
+
+        /* Top Bar Styling */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+            padding: 8px 0;
+            box-shadow: 0 2px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .top-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+        .logo img{
+            height: 70px;
+            width: 180px;
+        }
+
+
+        .top-bar-left span {
+            margin-right: 25px;
+            color: white;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar-left span i {
+            font-size: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px;
+            border-radius: 50%;
+        }
+
+        .top-bar-right span {
+            color: white;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar Styling - Luxury White & Gold */
+        .navbar {
+            background: var(--ivory-bg);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 80px;
+        }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .logo i {
+            font-size: 2.8rem;
+            color: var(--primary-gold);
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gemGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes gemGlow {
+            0% { text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); }
+            100% { text-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+        }
+
+        .logo-text img {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo-text img {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent-bronze);
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links > li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links > li > a {
+            color: var(--dark-text);
+            text-decoration: none;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-links > li > a:hover {
+            color: var(--primary-gold);
+            background: linear-gradient(to bottom, transparent 50%, rgba(212, 175, 55, 0.05) 50%);
+        }
+
+        .nav-links > li > a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--secondary-gold));
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links > li > a:hover::after {
+            width: 80%;
+        }
+
+        .nav-links > li > a i {
+            font-size: 14px;
+            color: var(--primary-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links > li > a:hover i {
+            transform: translateY(-2px);
+        }
+
+        /* Dropdown Styling */
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            width: 900px;
+            background: var(--ivory-bg);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .dropdown-header {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            padding: 25px;
+            text-align: center;
+        }
+
+        .dropdown-header h3 {
+            color: white;
+            margin: 0 0 8px 0;
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .dropdown-header p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .dropdown-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            padding: 25px;
+        }
+
+        .dropdown-category {
+            padding: 15px;
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .dropdown-category:last-child {
+            border-right: none;
+        }
+
+        .dropdown-category h4 {
+            color: var(--primary-gold);
+            margin: 0 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .dropdown-category a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            color: var(--medium-text);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .dropdown-category a:hover {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.1));
+            color: var(--primary-gold);
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .dropdown-category a img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-category a:hover img {
+            border-color: var(--primary-gold);
+            transform: scale(1.1);
+        }
+
+        .dropdown-footer {
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(244, 208, 63, 0.05));
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            text-align: center;
+        }
+
+        .dropdown-view-all {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 30px;
+            border: 2px solid var(--primary-gold);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            background: white;
+            font-size: 14px;
+        }
+
+        .dropdown-view-all:hover {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Heart Icon */
+        .heart-icon a {
+            padding: 15px;
+          
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+            
+        }
+
+        .heart-icon a:hover {
+            transform: scale(1.1) rotate(10deg);
+      
+        }
+
+        .heart-icon i {
+            color: white;
+            font-size: 18px;
+        }
+
+        .like-count {
+            position: absolute;
+          
+            
+            background: white;
+            color: var(--primary-gold);
+            font-size: 11px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid var(--primary-gold);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-gold);
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1001;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .dropdown-content {
+                width: 750px;
+            }
+            
+            .dropdown-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-links > li > a {
+                padding: 0 18px;
+                font-size: 14px;
+            }
+            
+            .logo i {
+                font-size: 2.2rem;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -320px;
+                width: 320px;
+                height: 100vh;
+                background: var(--ivory-bg);
+                flex-direction: column;
+                padding-top: 100px;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                overflow-y: auto;
+                box-shadow: -10px 0 30px rgba(212, 175, 55, 0.15);
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links > li {
+                width: 100%;
+                height: auto;
+            }
+            
+            .nav-links > li > a {
+                padding: 20px 30px;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+                width: 100%;
+                justify-content: space-between;
+                font-size: 16px;
+            }
+            
+            .nav-links > li > a::after {
+                display: none;
+            }
+            
+            .dropdown-content {
+                position: static;
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                background: rgba(212, 175, 55, 0.05);
+                display: none;
+                margin-top: 0;
+                border-radius: 0;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+            
+            .dropdown-category {
+                border-right: none;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            
+            .dropdown-category:last-child {
+                border-bottom: none;
+            }
+            
+            .top-bar-content {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            
+            .top-bar-left span {
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+            
+            .logo-text p {
+                font-size: 0.8rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                right: -100%;
+            }
+            
+            .top-bar-left span,
+            .top-bar-right span {
+                font-size: 11px;
+            }
+            
+            .nav-container {
+                height: 70px;
+            }
+        }
+
+        /* Overlay when mobile menu is open */
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            z-index: 999;
+        }
+
+        .mobile-overlay.active {
+            display: block;
+        }
+
+        /* Dropdown arrow animation */
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Navbar Animation */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            animation: fadeInDown 0.5s ease;
+        }
+
+        /* Scroll effect for navbar */
+        .navbar.scrolled {
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+            background: rgba(255, 252, 245, 0.95);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header>
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-phone-alt"></i> +91 88700 13202</span>
+                    <span><i class="fas fa-envelope"></i> info@candagold.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                </div>
+                <div class="top-bar-right">
+                    <span><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 8 PM | Sun: 11 AM - 6 PM</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                   <!-- <img src="./images/Logo canda[1]_page-0001.jpg" alt=""> -->
+                    <div class="logo-text">
+                         <img src="./images/Logo canda[1]_page-0001.jpg" alt="">
+                        <!-- <h1>Canda Gold Craft & Jewellery</h1> -->
+                        <!-- <p>& Jewellery</p> -->
+                    </div>
+                </a>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="./index.html"> Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="./gold.html">Gold <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-content gold-dropdown">
+                           
+                            <div class="dropdown-container">
+                                <div class="dropdown-category">
+                                    <h4>Necklaces & Chains</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Necklace">Gold Necklaces</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Chain">Gold Chains</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Mangalsutra">Mangalsutras</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Bangles & Bracelets</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bangles">Gold Bangles</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bracelets">Gold Bracelets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Kadas">Gold Kadas</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Rings & Earrings</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Rings">Gold Rings</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1589674781759-c21c37956a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Earrings">Gold Earrings</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1589674781759-c21c37956a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Nose Rings">Nose Rings</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Special Collections</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bridal">Bridal Sets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Antique">Antique Gold</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Diamond">Diamond Gold</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="./silver.html">Silver <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-content silver-dropdown">
+                           
+                            <div class="dropdown-container">
+                                <div class="dropdown-category">
+                                    <h4>Silver Jewelry</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Anklets">Silver Anklets</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Pendants">Silver Pendants</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Bracelets">Silver Bracelets</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Silverware</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Utensils">Silver Utensils</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Plates">Silver Plates</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Glasses">Silver Glasses</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Oxidized Silver</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Oxidized">Oxidized Jewelry</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Traditional">Traditional Silver</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1605100940451-89e4327f00b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Modern">Modern Designs</a>
+                                </div>
+                                
+                                <div class="dropdown-category">
+                                    <h4>Silver Gifts</h4>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Gifts">Gift Items</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Pooja">Pooja Items</a>
+                                    <a href="#"><img src="https://images.unsplash.com/photo-1594576722517-5a5d604a06b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Showpieces">Showpieces</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+
+                    <li><a href="./mothergold.html"> MotherGold</a></li>
+                    <li><a href="./about.html"> About</a></li>
+                    <li><a href="./contact.html"> Contact</a></li>
+                    <li class="heart-icon">
+                        <a href="#">
+                            <i class="fas fa-heart"></i> 
+                            <span class="like-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-overlay"></div>
+    </header>
+
+    <!-- Gold Hero Section with Slideshow -->
+    <section class="collection-hero gold-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><i class="fas fa-crown"></i> Gold Collection</h1>
+                <p>Discover our exclusive 22K and 24K gold jewelry, handcrafted with precision and love. Each piece tells a story of timeless elegance.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <i class="fas fa-certificate"></i>
+                        <span>100% Hallmark Certified</span>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-hands"></i>
+                        <span>Handcrafted Excellence</span>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-gem"></i>
+                        <span>Precious Stones Available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slideshow">
+                <div class="slideshow-container">
+                    <!-- Slides -->
+                    <div class="mySlides fade">
+                        <img src="https://ratnalayajewels.com/wp-content/uploads/2024/01/LA62154.jpeg" alt="Gold Necklace">
+                        <div class="slide-caption">Elegant Gold Necklaces</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="https://thumbs.dreamstime.com/b/elegant-engagement-ring-round-cut-diamond-polished-gold-band-set-classic-exudes-elegance-luxury-solitaire-351642475.jpg" alt="Gold Rings">
+                        <div class="slide-caption">Exquisite Gold Rings</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="https://www.kushals.com/cdn/shop/files/antique-bangle-antique-bangle-159984-40340329332892.jpg?v=1732925247&width=1200" alt="Gold Bangles">
+                        <div class="slide-caption">Traditional Bangles</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="https://manubhai.in/SocialMedia/post_artworks/DLBD03131.jpg" alt="Gold Earrings">
+                        <div class="slide-caption">Beautiful Earrings</div>
+                    </div>
+                    
+                    <!-- Dots/bullets/indicators -->
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Categories -->
+    <section class="categories">
+        <h2><i class="fas fa-list"></i> Gold Categories</h2>
+        <div class="categories-grid">
+            <a href="#necklaces" class="category-card gold-category" data-section="necklaces">
+                <div class="category-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Necklaces</h3>
+                <p>Traditional & Contemporary Designs</p>
+            </a>
+            <a href="#bangles" class="category-card gold-category" data-section="bangles">
+                <div class="category-icon">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <h3>Bangles & Bracelets</h3>
+                <p>Gold Bangles for Every Occasion</p>
+            </a>
+            <a href="#rings" class="category-card gold-category" data-section="rings">
+                <div class="category-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <h3>Rings</h3>
+                <p>Exquisite Gold Rings with Diamonds</p>
+            </a>
+            <a href="#earrings" class="category-card gold-category" data-section="earrings">
+                <div class="category-icon">
+                    <i class="fas fa-circle-notch"></i>
+                </div>
+                <h3>Earrings</h3>
+                <p>Jhumkas, Studs & Danglers</p>
+            </a>
+            <a href="#chains" class="category-card gold-category" data-section="chains">
+                <div class="category-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>Chains</h3>
+                <p>Gold Chains in Various Designs</p>
+            </a>
+            <a href="#pendants" class="category-card gold-category" data-section="pendants">
+                <div class="category-icon">
+                    <i class="fas fa-cross"></i>
+                </div>
+                <h3>Pendants</h3>
+                <p>Gold Pendants with Precious Stones</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Necklaces Section -->
+   <!-- Necklaces Section -->
+<section id="necklaces" class="product-section">
+    <div class="section-header">
+        <h2><i class="fas fa-gem"></i> Necklace Collection</h2>
+        <p>Elegant gold necklaces for weddings and special occasions</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/traditional-polished-temple-jewellery-with-neck-piece-and-earrings-2221949038-qpbslp8r.jpg" alt="Gold Necklace">
+                <div class="product-badge gold-badge">22K Gold</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Traditional Temple Necklace</h3>
+                <p class="product-desc">Heavy gold necklace with traditional temple work</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 45g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Studded</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://sansajewellery.com/wp-content/uploads/2021/03/gold-necklace-2-.jpeg" alt="Gold Necklace">
+                <div class="product-badge gold-badge">24K Pure</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Modern Choker Set</h3>
+                <p class="product-desc">Contemporary design with emerald stones</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 32g</span>
+                    <span><i class="fas fa-gem"></i> Emerald & Diamond</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/418884504/AL/YH/IA/23402386/bridal-antique-jewellery-set.jpg" alt="Gold Necklace">
+                <div class="product-badge gold-badge">Antique</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Bridal Antique Set</h3>
+                <p class="product-desc">Complete bridal set with necklace and earrings</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 85g</span>
+                    <span><i class="fas fa-gem"></i> Polki Diamonds</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.vummidi.com/blog/wp-content/uploads/2024/08/Guttapusalu-Heritage-Set.jpg" alt="Gold Necklace">
+                <div class="product-badge gold-badge">Heritage</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Guttapusalu Heritage Set</h3>
+                <p class="product-desc">Traditional South Indian design</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 65g</span>
+                    <span><i class="fas fa-gem"></i> Ruby Stones</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://m.media-amazon.com/images/I/41dNvjAcEfL._AC_.jpg" alt="Gold Necklace">
+                <div class="product-badge gold-badge">Layered</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Layered Statement Necklace</h3>
+                <p class="product-desc">Three-layered gold necklace with pearl accents</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 52g</span>
+                    <span><i class="fas fa-gem"></i> Pearl & Diamond</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://litb-cgis.rightinthebox.com/images/500x675/202507/bps/product/inc/eualeu1752464556177.jpg" alt="Gold Necklace">
+                <div class="product-badge gold-badge">Contemporary</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Contemporary Geometric Necklace</h3>
+                <p class="product-desc">Modern geometric patterns with sapphire stones</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 38g</span>
+                    <span><i class="fas fa-gem"></i> Sapphire Accents</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/gold-plated-classic-necklace-set-weight-30-gm-2221118070-7ieozney.jpg">
+                <div class="product-badge gold-badge">Mughal</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Mughal Style Necklace Set</h3>
+                <p class="product-desc">Inspired by Mughal era designs with intricate work</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 72g</span>
+                    <span><i class="fas fa-gem"></i> Kundan & Meenakari</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://superstore18.com/cdn/shop/files/PCSV1546_02_7f6dc808-257e-4962-bfb3-668dd8d3b1b0.jpg?v=1715777628&width=1946" alt="Gold Necklace">
+                <div class="product-badge gold-badge">Filigree</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Filigree Work Necklace</h3>
+                <p class="product-desc">Delicate filigree work with intricate patterns</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 28g</span>
+                    <span><i class="fas fa-gem"></i> Rose Cut Diamonds</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.everestgoldcovering.com/image/cache/catalog/Haram/hrm837-unique-leaf-design-net-pattern-gold-plated-haram-necklace-set-2-850x1000.jpg.webp" alt="Gold Necklace">
+                <div class="product-badge gold-badge">Traditional</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Palada Haram Set</h3>
+                <p class="product-desc">Traditional South Indian gold necklace with matching earrings</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 90g</span>
+                    <span><i class="fas fa-gem"></i> Complete Set</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+    <!-- Bangles Section -->
+<section id="bangles" class="product-section">
+    <div class="section-header">
+        <h2><i class="fas fa-circle"></i> Bangles & Bracelets</h2>
+        <p>Traditional and modern gold bangles</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://cdnmedia-breeze.vaibhavjewellers.com/media/catalog/product/image/91802d34/vaibhav-jewellers-22k-antique-gold-gheru-bangles-125vg1192-125vg1192.jpg" alt="Gold Bangles">
+                <div class="product-badge gold-badge">22K Gold</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Classic Gold Bangles</h3>
+                <p class="product-desc">Set of 8 traditional gold bangles</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 40g</span>
+                    <span><i class="fas fa-circle"></i> Set of 8</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/6-Golden-Designer-Bangles-Set-6GB-1.jpg" alt="Designer Bangles">
+                <div class="product-badge gold-badge">Designer</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Designer Bracelet Set</h3>
+                <p class="product-desc">Modern designer gold bracelets</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 35g</span>
+                    <span><i class="fas fa-gem"></i> Pearl Accents</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2023/7/323113372/IE/VM/GM/13173376/myproject-1-2023-04-01t162921-527-500x500.jpg" alt="Gold Bangles">
+                <div class="product-badge gold-badge">Traditional</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Heavy Gold Bangles</h3>
+                <p class="product-desc">Traditional heavy gold bangles</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 55g</span>
+                    <span><i class="fas fa-circle"></i> Set of 6</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230628/xLxO/649b8e67a9b42d15c902abb4/-473Wx593H-465675961-gold-MODEL.jpg" alt="Designer Bangles">
+                <div class="product-badge gold-badge">Contemporary</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Contemporary Bracelets</h3>
+                <p class="product-desc">Modern design with intricate patterns</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 30g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Accents</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://karatcart.com/cdn/shop/files/download_2bd83a8c-60a8-48f3-a642-2e9d733707fd.jpg?v=1753449421&width=1946" alt="Gold Bangles">
+                <div class="product-badge gold-badge">Festival</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Festival Special Bangles</h3>
+                <p class="product-desc">Traditional bangles for festive occasions</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 48g</span>
+                    <span><i class="fas fa-gem"></i> Polki & Meenakari</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.kushals.com/cdn/shop/files/antique-bangle-antique-bangle-159984-40340329332892.jpg?v=1732925247&width=1200" alt="Antique Bangles">
+                <div class="product-badge gold-badge">Antique</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Antique Finish Bangles</h3>
+                <p class="product-desc">Vintage look with antique gold finish</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 42g</span>
+                    <span><i class="fas fa-circle"></i> Set of 4</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.paisleypopshop.com/cdn/shop/products/IMGL0188_1024x1024.jpg?v=1721896097" alt="Gold Bangles">
+                <div class="product-badge gold-badge">Lacquer</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Lacquer Work Bangles</h3>
+                <p class="product-desc">Traditional lacquer work on gold bangles</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 38g</span>
+                    <span><i class="fas fa-palette"></i> Multi-color</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/-ghq8myee.jpg" alt="Gold Bangles">
+                <div class="product-badge gold-badge">Locket</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Locket Bangles Set</h3>
+                <p class="product-desc">Bangles with small lockets and charms</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 50g</span>
+                    <span><i class="fas fa-lock"></i> With Lockets</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.caratlane.com/blog/wp-content/uploads/2022/08/CL-Everyday-20210536-1.jpg" alt="Gold Bracelets">
+                <div class="product-badge gold-badge">Minimalist</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Minimalist Gold Bracelets</h3>
+                <p class="product-desc">Simple and elegant gold bracelets for daily wear</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 25g</span>
+                    <span><i class="fas fa-circle"></i> Set of 3</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+</section>
+    <!-- Rings Section -->
+    <!-- Rings Section -->
+<section id="rings" class="product-section">
+    <div class="section-header">
+        <h2><i class="fas fa-ring"></i> Rings Collection</h2>
+        <p>Exquisite gold rings for all occasions</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://thumbs.dreamstime.com/b/elegant-engagement-ring-round-cut-diamond-polished-gold-band-set-classic-exudes-elegance-luxury-solitaire-351642475.jpg" alt="Gold Ring">
+                <div class="product-badge gold-badge">Diamond</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Diamond Solitaire Ring</h3>
+                <p class="product-desc">Classic solitaire with brilliant cut diamond</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 8g</span>
+                    <span><i class="fas fa-gem"></i> 1 Carat Diamond</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.brilliance.com/cdn-cgi/image/f=webp,width=720,height=720,quality=90/sites/default/files/engagement-rings/inset-diamond-engagement-ring-and-wedding-band-set-yellow-gold/1yellowrenderinginsetdiamondengagementringweddingbandsetinyellowgoldtop00000.jpg" alt="Gold Ring">
+                <div class="product-badge gold-badge">Wedding</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Wedding Band Set</h3>
+                <p class="product-desc">Elegant wedding bands for couples</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 12g</span>
+                    <span><i class="fas fa-ring"></i> Pair Set</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/ring/o/4/y/free-size-1-kjrg326-ring-kanak-jewels-original-imagn39fq3yrqekz.jpeg?q=90" alt="Gold Ring">
+                <div class="product-badge gold-badge">Emerald</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Emerald & Diamond Ring</h3>
+                <p class="product-desc">Central emerald surrounded by diamonds</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 6g</span>
+                    <span><i class="fas fa-gem"></i> Emerald Stone</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.macintyres.co.uk/25252-large_default/18ct-gold-ruby-diamond-cluster-ring-r-064-d-017.jpg" alt="Gold Ring">
+                <div class="product-badge gold-badge">Ruby</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Ruby Cluster Ring</h3>
+                <p class="product-desc">Cluster of rubies with diamond accents</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 7g</span>
+                    <span><i class="fas fa-gem"></i> Ruby Cluster</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+    <!-- Earrings Section -->
+    <!-- Earrings Section -->
+<section id="earrings" class="product-section">
+    <div class="section-header">
+        <h2><i class="fas fa-circle-notch"></i> Earrings Collection</h2>
+        <p>Beautiful gold earrings in various styles</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://manubhai.in/SocialMedia/post_artworks/DLBD03131.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Jhumkas</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Traditional Jhumkas</h3>
+                <p class="product-desc">Traditional gold jhumkas with pearls</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 18g</span>
+                    <span><i class="fas fa-gem"></i> Pearl & Diamond</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://images-static.nykaa.com/media/catalog/product/4/a/4a43541DDIGIT00002157_1.jpg?tr=w-500" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Studs</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Diamond Stud Earrings</h3>
+                <p class="product-desc">Simple yet elegant diamond studs</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 6g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Accents</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://shopzters.com/cdn/shop/products/SKJ10022_bb426e0b-6c6e-4f08-b4b0-4c5189c87e82_740x.jpg?v=1619845050" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Chandbalis</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Traditional Chandbalis</h3>
+                <p class="product-desc">Moon-shaped traditional chandbali earrings</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 22g</span>
+                    <span><i class="fas fa-moon"></i> Moon Design</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://tiimg.tistatic.com/fp/1/007/863/women-designer-beautiful-stylish-look-skin-friendly-golden-earrings-878.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Hoops</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Gold Hoop Earrings</h3>
+                <p class="product-desc">Classic gold hoop earrings for daily wear</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 12g</span>
+                    <span><i class="fas fa-circle"></i> Medium Size</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.bhaskarjewellers.com/image/cache/catalog/newpics/diamond%20earrings%20with%20pearl%20for%20women-700x700.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Danglers</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Diamond Dangler Earrings</h3>
+                <p class="product-desc">Elegant diamond danglers for special occasions</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 16g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Line</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 6 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.kushals.com/cdn/shop/files/chandbalis-earrings-chandbalis-earrings-13-40377732317244.jpg?v=1709171774&width=1200" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Polki</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Polki Chandbali Earrings</h3>
+                <p class="product-desc">Traditional polki work chandbali earrings</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 25g</span>
+                    <span><i class="fas fa-gem"></i> Polki & Emerald</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 7 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw7c784abf/images/hi-res/50D2ZRQABA04_1.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Temple</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Temple Design Earrings</h3>
+                <p class="product-desc">Traditional temple work with intricate designs</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 20g</span>
+                    <span><i class="fas fa-gem"></i> Temple Work</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 8 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.joseralukas.com/cdn/shop/products/Screenshot2020-11-02at10.24.08AM.png?v=1604301867" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Minimalist</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Minimalist Gold Earrings</h3>
+                <p class="product-desc">Simple gold earrings for everyday elegance</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 8g</span>
+                    <span><i class="fas fa-circle"></i> Small Studs</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 9 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/traditional-antique-gold-jhumkas-2221949086-9qglh7lk.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Antique</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Antique Jhumkas</h3>
+                <p class="product-desc">Vintage style jhumkas with antique finish</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 19g</span>
+                    <span><i class="fas fa-gem"></i> Antique Work</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 10 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.kgdiamonds.com/image/cache/catalog/New%20Folder/IMG_0049-1000x1000.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Diamond</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Diamond Cluster Earrings</h3>
+                <p class="product-desc">Cluster of diamonds in elegant design</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 14g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Cluster</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 11 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.malabargoldanddiamonds.com/media/catalog/product/cache/1/image/1000x/9df78eab33525d08d6e5fb8d27136e95/m/g/mg0101re0r9_1.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Bridal</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Bridal Earring Set</h3>
+                <p class="product-desc">Heavy bridal earrings for wedding ceremonies</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 28g</span>
+                    <span><i class="fas fa-heart"></i> Bridal Design</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 12 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw0e89e2aa/images/hi-res/50D2ZFQABA58_1.jpg" alt="Gold Earrings">
+                <div class="product-badge gold-badge">Designer</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Designer Drop Earrings</h3>
+                <p class="product-desc">Contemporary designer drop earrings</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 15g</span>
+                    <span><i class="fas fa-gem"></i> Modern Design</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+      <!-- Chains Section -->
+<section id="chains" class="product-section">
+    <div class="section-header">
+        <h2><i class="fas fa-link"></i> Chains Collection</h2>
+        <p>Elegant gold chains in various styles and lengths</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/necklace-chain/b/w/h/-original-imahfvfghfwzjjps.jpeg?q=90" alt="Gold Chain">
+                <div class="product-badge gold-badge">Cable</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Classic Cable Chain</h3>
+                <p class="product-desc">Traditional cable chain for daily wear</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 12g</span>
+                    <span><i class="fas fa-ruler"></i> 20 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://robinsonsjewelers.com/cdn/shop/articles/6-strongest-gold-chain-types_20241203.jpg?v=1733980839&width=600" alt="Gold Chain">
+                <div class="product-badge gold-badge">Figaro</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Figaro Link Chain</h3>
+                <p class="product-desc">Popular figaro pattern with alternating links</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 18g</span>
+                    <span><i class="fas fa-ruler"></i> 22 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://foreverjewellery.in/cdn/shop/files/BCH-14_1_1_1024x1024.jpg?v=1728019021" alt="Gold Chain">
+                <div class="product-badge gold-badge">Rolo</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Rolo Link Chain</h3>
+                <p class="product-desc">Circular links for a smooth, elegant look</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 15g</span>
+                    <span><i class="fas fa-ruler"></i> 18 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.chidambaramgoldcovering.com/image/cache/catalog/ChidambaramGoldCovering/Short%20Chains/chns1174-latest-one-gram-gold-short-chain-shop-online-1-850x1000.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Heavy</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Heavy Gold Chain</h3>
+                <p class="product-desc">Substantial chain for a bold statement</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 45g</span>
+                    <span><i class="fas fa-ruler"></i> 24 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.joseralukas.com/cdn/shop/products/Screenshot2020-11-02at10.22.11AM.png?v=1604301757" alt="Gold Chain">
+                <div class="product-badge gold-badge">Box</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Box Chain</h3>
+                <p class="product-desc">Square links creating a geometric pattern</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 14g</span>
+                    <span><i class="fas fa-ruler"></i> 20 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 6 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.kgdiamonds.com/image/cache/catalog/New%20Folder/IMG_0078-1000x1000.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Diamond</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Diamond Studded Chain</h3>
+                <p class="product-desc">Gold chain with diamond accents</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 22g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Line</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 7 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw6a3a9478/images/hi-res/50D2ZXNAAA44_1.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Singapore</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Singapore Chain</h3>
+                <p class="product-desc">Flat, twisted links for a unique look</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 16g</span>
+                    <span><i class="fas fa-ruler"></i> 22 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 8 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.kushals.com/cdn/shop/files/chain-necklace-chain-necklace-9-40340456800316.jpg?v=1708682450&width=1200" alt="Gold Chain">
+                <div class="product-badge gold-badge">Franco</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Franco Chain</h3>
+                <p class="product-desc">Flat, interlocking links with high polish</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 20g</span>
+                    <span><i class="fas fa-ruler"></i> 24 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 9 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/traditional-heavy-gold-chain-2222840132-s7mdzpwv.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Traditional</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Traditional Heavy Chain</h3>
+                <p class="product-desc">Traditional design with substantial weight</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 38g</span>
+                    <span><i class="fas fa-ruler"></i> 26 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 10 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.malabargoldanddiamonds.com/media/catalog/product/cache/1/image/1000x/9df78eab33525d08d6e5fb8d27136e95/5/0/50d2zxgaa45_1_1.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Rope</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Rope Chain</h3>
+                <p class="product-desc">Twisted design resembling a rope</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 25g</span>
+                    <span><i class="fas fa-ruler"></i> 22 Inches</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 11 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.bhaskarjewellers.com/image/cache/catalog/newpics/gold%20chain%20with%20pendant%20for%20women-700x700.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Layered</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Layered Chain Set</h3>
+                <p class="product-desc">Multiple chains of different lengths</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 30g</span>
+                    <span><i class="fas fa-layer-group"></i> 3 Layers</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Product 12 -->
+        <!-- <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw6d3e78b8/images/hi-res/50D2ZXNAAA23_1.jpg" alt="Gold Chain">
+                <div class="product-badge gold-badge">Designer</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Designer Statement Chain</h3>
+                <p class="product-desc">Contemporary designer chain with unique links</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 28g</span>
+                    <span><i class="fas fa-palette"></i> Unique Design</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+<!-- Pendants Section -->
+<section id="pendants" class="product-section">
+    <div class="section-header">
+        <h2><i class="fas fa-cross"></i> Pendants Collection</h2>
+        <p>Beautiful gold pendants with precious stones</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://img.tatacliq.com/images/i14/437Wx649H/MP000000019588086_437Wx649H_202310091305591.jpeg" alt="Gold Pendant">
+                <div class="product-badge gold-badge">Diamond</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Diamond Solitaire Pendant</h3>
+                <p class="product-desc">Single diamond pendant on gold chain</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 8g</span>
+                    <span><i class="fas fa-gem"></i> 0.5 Carat Diamond</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://www.caratlane.com/blog/wp-content/uploads/2024/10/Trendy-22k-Gold-Pendants-for-Daily-Wear-1.jpg" alt="Gold Pendant">
+                <div class="product-badge gold-badge">Emerald</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Emerald Center Pendant</h3>
+                <p class="product-desc">Central emerald stone with diamond halo</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 10g</span>
+                    <span><i class="fas fa-gem"></i> Emerald & Diamond</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://silverlinings.in/cdn/shop/products/PD004ag_3_8833edb8-b375-4a1c-b438-59ccd179b75b.JPG?v=1757269751" alt="Gold Pendant">
+                <div class="product-badge gold-badge">Ruby</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Ruby Cluster Pendant</h3>
+                <p class="product-desc">Cluster of rubies in floral design</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 12g</span>
+                    <span><i class="fas fa-gem"></i> Ruby Cluster</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="https://kolhapurisaaj.in/cdn/shop/files/Forming_Gold_32_Mangalsutra_with_Floral_Peacock_Pendant_with_a_tint_of_Meena_Work_1.jpg?v=1730358715&width=1200" alt="Gold Pendant">
+                <div class="product-badge gold-badge">Religious</div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="product-content">
+                <h3>Lord Ganesha Pendant</h3>
+                <p class="product-desc">Intricate Lord Ganesha design with diamonds</p>
+                <div class="product-details">
+                    <span><i class="fas fa-weight-hanging"></i> 15g</span>
+                    <span><i class="fas fa-gem"></i> Diamond Accents</span>
+                </div>
+                <div class="product-action">
+                    <button class="inquire-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+    <!-- Gold Info -->
+    <section class="info-section gold-info">
+        <div class="info-content">
+            <div class="info-text">
+                <h2><i class="fas fa-info-circle"></i> About Our Gold</h2>
+                <p>We offer the finest quality 22K and 24K gold jewelry, each piece hallmarked for purity and authenticity.</p>
+                <ul class="info-list">
+                    <li><i class="fas fa-check-circle"></i> BIS Hallmark Certified</li>
+                    <li><i class="fas fa-check-circle"></i> Traditional & Modern Designs</li>
+                    <li><i class="fas fa-check-circle"></i> Customization Available</li>
+                    <li><i class="fas fa-check-circle"></i> Exchange & Buyback Policy</li>
+                </ul>
+            </div>
+            <div class="info-image">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/df383490885971.5e230dd39d725.jpg" alt="Gold Crafting">
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <i class="fas fa-gem"></i>
+                        <div>
+                            <h3>Canda Gold Craft & Jewellery</h3>
+                            <p class="footer-tagline">Crafting timeless jewelry since 1985</p>
+                        </div>
+                    </a>
+                </div>
+                <p class="footer-description">Family-owned jewelry store specializing in premium gold and silver jewelry, offering exquisite craftsmanship and personalized service for over three decades.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="gold.html"><i class="fas fa-chevron-right"></i> Gold Collection</a></li>
+                    <li><a href="silver.html"><i class="fas fa-chevron-right"></i> Silver Collection</a></li>
+                    <li><a href="mothergold.html"><i class="fas fa-chevron-right"></i> MotherGold</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Visit Us</h4>
+                <div class="visit-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jewel Street, Mumbai, India</p>
+                    <p><i class="fas fa-phone"></i> +91 88700 13202</p>
+                    <p><i class="fas fa-envelope"></i> info@candagold.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 10 AM - 8 PM</p>
+                    <p><i class="fas fa-clock"></i> Sunday: 11 AM - 6 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="services-info">
+                    <p><i class="fas fa-gem"></i> Jewelry Consultation</p>
+                    <p><i class="fas fa-pencil-alt"></i> Custom Design</p>
+                    <p><i class="fas fa-sync-alt"></i> Repair & Maintenance</p>
+                    <p><i class="fas fa-shield-alt"></i> Insurance Assistance</p>
+                    <p><i class="fas fa-truck"></i> Safe Delivery</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 Canda Gold Craft & Jewellery. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+            <p class="disclaimer">All jewelry shown is available exclusively at our store. Hallmark certified. No online delivery available.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918870013202" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="gold.js"></script>
+</body>
+</html>
